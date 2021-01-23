@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="727.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectmanager.FXMLEmployeeController">
+   <children>
+      <Label text="Registrar-se">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <FlowPane.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </FlowPane.margin>
+      </Label>
+      <VBox>
+         <children>
+            <Label text="Dados pessoais">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Label text="Nome: ">
+         <FlowPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </FlowPane.margin>
+      </Label>
+      <TextField fx:id="textFieldNome">
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+      </TextField>
+      <Label text="Sobrenome">
+         <FlowPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </FlowPane.margin>
+      </Label>
+      <TextField fx:id="textFieldSobreNome">
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+      </TextField>
+      <VBox>
+         <children>
+            <Label text="Senha">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </FlowPane.margin>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="textFieldSenha" />
+            <VBox>
+               <children>
+                  <Label text="Confirmar senha">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="textFieldConfirmarSenha" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox spacing="20.0">
+         <children>
+            <RadioButton fx:id="radioButtonSexoMasculino" mnemonicParsing="false" text="Masculino">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" />
+               </FlowPane.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="sex" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radioButtonSexoFeminino" mnemonicParsing="false" text="Feminino" toggleGroup="$sex" />
+         </children>
+         <FlowPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </FlowPane.margin>
+      </HBox>
+      <VBox>
+         <children>
+            <Label text="Endereço">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </FlowPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <FlowPane prefHeight="243.0" prefWidth="365.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="Logradouro">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="textFieldLogradouro" />
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Complemento">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="textFieldComplemento" />
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Bairro">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="textFieldBairro" />
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Cidade">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="textFieldCidade" />
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Cep">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="textFieldCep" />
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </VBox>
+         </children>
+      </FlowPane>
+      <Button mnemonicParsing="false" onAction="#handleButtonRegisterEmployeeAction" text="Registrar Empregado">
+         <FlowPane.margin>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </FlowPane.margin>
+      </Button>
+   </children>
+</FlowPane>
