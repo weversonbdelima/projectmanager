@@ -21,6 +21,7 @@ public class ProjectManager extends Application {
     private static Scene sceneAuthentication;
     private static Scene sceneRegisterEmployee;
     private static Scene sceneManagerPanel;
+    private static Scene sceneRegisterTask;
     
     
     
@@ -28,14 +29,17 @@ public class ProjectManager extends Application {
     public void start(Stage primaryStage) throws Exception {
         stage = primaryStage;
         //Criação de telas da aplicação
-        Parent rootAuthentication = FXMLLoader.load(getClass().getResource("FXMLAuthentication.fxml"));
+        Parent rootAuthentication = FXMLLoader.load(getClass().getResource("/views/FXMLAuthentication.fxml"));
         sceneAuthentication = new Scene(rootAuthentication);
         
-        Parent rootRegisterEmployee = FXMLLoader.load(getClass().getResource("FXMLRegisterEmployee.fxml"));
+        Parent rootRegisterEmployee = FXMLLoader.load(getClass().getResource("/views/FXMLRegisterEmployee.fxml"));
         sceneRegisterEmployee = new Scene(rootRegisterEmployee);
         
-        Parent rootManagerPanel = FXMLLoader.load(getClass().getResource("FXMLManagerPanel.fxml"));
+        Parent rootManagerPanel = FXMLLoader.load(getClass().getResource("/views/FXMLManagerPanel.fxml"));
         sceneManagerPanel = new Scene(rootManagerPanel);
+        
+        Parent rootRegisterTask = FXMLLoader.load(getClass().getResource("/views/FXMLRegisterTask.fxml"));
+        sceneRegisterTask = new Scene(rootRegisterTask);
         
         
         stage.setScene(sceneAuthentication);
@@ -46,8 +50,13 @@ public class ProjectManager extends Application {
         switch(screen){
             case "registerEmployee":
                 stage.setScene(sceneRegisterEmployee);
+            break;
             case "managerPanel":
                 stage.setScene(sceneManagerPanel);
+            break;
+            case "registerTask":
+                stage.setScene(sceneRegisterTask);
+            break;
         }
     }
 
