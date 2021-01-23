@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package services;
-import projectmanager.models.Employee;
+import models.Employee;
 
 /**
  *

@@ -17,14 +17,38 @@ import javafx.stage.Stage;
  */
 public class ProjectManager extends Application {
     
+    private static Stage stage; 
+    private static Scene sceneAuthentication;
+    private static Scene sceneRegisterEmployee;
+    private static Scene sceneManagerPanel;
+    
+    
+    
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+    public void start(Stage primaryStage) throws Exception {
+        stage = primaryStage;
+        //Criação de telas da aplicação
+        Parent rootAuthentication = FXMLLoader.load(getClass().getResource("FXMLAuthentication.fxml"));
+        sceneAuthentication = new Scene(rootAuthentication);
         
-        Scene scene = new Scene(root);
+        Parent rootRegisterEmployee = FXMLLoader.load(getClass().getResource("FXMLRegisterEmployee.fxml"));
+        sceneRegisterEmployee = new Scene(rootRegisterEmployee);
         
-        stage.setScene(scene);
+        Parent rootManagerPanel = FXMLLoader.load(getClass().getResource("FXMLManagerPanel.fxml"));
+        sceneManagerPanel = new Scene(rootManagerPanel);
+        
+        
+        stage.setScene(sceneAuthentication);
         stage.show();
+    }
+    
+    public static void changeScreen(String screen){
+        switch(screen){
+            case "registerEmployee":
+                stage.setScene(sceneRegisterEmployee);
+            case "managerPanel":
+                stage.setScene(sceneManagerPanel);
+        }
     }
 
     /**
