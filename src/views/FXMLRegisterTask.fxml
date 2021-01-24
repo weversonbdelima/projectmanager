@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="727.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Registrar tarefa">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <FlowPane.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </FlowPane.margin>
+      </Label>
+      <VBox>
+         <children>
+            <Label text="Tarefa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Label text="Descrição">
+         <FlowPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </FlowPane.margin>
+      </Label>
+      <TextArea prefHeight="200.0" prefWidth="411.0" />
+      <Button mnemonicParsing="false" text="Registrar tarefa">
+         <FlowPane.margin>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </FlowPane.margin>
+      </Button>
+   </children>
+</FlowPane>

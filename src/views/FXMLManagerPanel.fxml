@@ -8,7 +8,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<FlowPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="727.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<FlowPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="727.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLManagerPanelController">
    <children>
       <HBox />
       <VBox prefHeight="82.0" prefWidth="801.0">
@@ -20,7 +20,7 @@
                         <Font size="27.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" text="Registrar atividade" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonRegisterTaskAction" text="Registrar atividade" />
                </children>
                <padding>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

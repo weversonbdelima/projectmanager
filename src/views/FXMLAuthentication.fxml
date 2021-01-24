@@ -26,7 +26,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </FlowPane.margin>
             </Label>
-            <TextField fx:id="textFieldNome">
+            <TextField>
                <FlowPane.margin>
                   <Insets />
                </FlowPane.margin>
@@ -46,7 +46,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </Label>
-            <PasswordField fx:id="textFieldSenha" />
+            <PasswordField />
          </children>
       </VBox>
       <HBox spacing="20.0">
@@ -56,7 +56,7 @@
                   <Insets top="20.0" />
                </FlowPane.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handleButtonAuthenticationAction" prefHeight="25.0" prefWidth="104.0" text="Registrar-se" />
+            <Button mnemonicParsing="false" onAction="#handleButtonRegisterEmployeeAction" prefHeight="25.0" prefWidth="104.0" text="Registrar-se" />
          </children>
          <FlowPane.margin>
             <Insets top="20.0" />
